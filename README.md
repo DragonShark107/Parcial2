@@ -10,11 +10,27 @@ Este proyecto es una aplicación Java sencilla para la gestión de empleados en 
 - **Textos**: Clase con los textos fijos usados en la aplicación para facilitar traducción y mantenimiento.
 - **SistemaGestionEmpleados**: Clase principal con el método `main` que ejecuta el flujo de la aplicación.
 
-## Tests
-El proyecto incluye un análisis de caja negra documentado en `TESTING.md` con criterios de aceptación y casos válidos/no válidos para los atributos de la clase Empleado. Los tests automáticos pueden añadirse fácilmente usando JUnit.
+## Tests y validación
+El análisis de caja negra está documentado en `TESTING.md`.
+
+### Pruebas realizadas
+- Se validó manualmente la creación de empleados con datos válidos y no válidos.
+- Se comprobó que el aumento de salario funciona correctamente.
+- Se verificó que los textos fijos y cargos solo permiten valores válidos.
+- El método mostrarEmpleados imprime correctamente la lista.
+- El código compila y ejecuta sin errores.
+
+### Ejemplo de ejecución
+```
+Introduzca el porcentaje de aumento de salario: 10
+Lista de Empleados:
+Empleado{nombre='Juan', cargo='Desarrollador', salario=55000.0}
+Empleado{nombre='María', cargo='Diseñadora', salario=49500.0}
+Empleado{nombre='Pedro', cargo='Gerente', salario=66000.0}
+```
 
 ## Autoría y versión
-- **Autor**: [Tu Nombre Aquí]
+- **Autor**: Izan Valverde Marin
 - **Versión**: 1.0
 - **Fecha**: Marzo 2026
 
